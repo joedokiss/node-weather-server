@@ -1,7 +1,6 @@
 /**
  * this JS is running from frontend used by the browser
  */
-console.log('-- client side app.js is loaded --');
 
 // const puzzleUrl = 'http://puzzle.mead.io/puzzle';
 
