@@ -5,6 +5,8 @@ const utils = require('./utils/utils');
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 // get the directory path pointing to '/public'
 const publicDirectoryPath = path.join(__dirname, '../public');
 // get the directory path to replace the original 'views'
@@ -77,6 +79,6 @@ app.get('/weather', (req, res) => {
     
 });
 
-app.listen(3000, () => {
-    console.log('Server is up and running...');
+app.listen(port, () => {
+    console.log('Server is up and running... on port ' + port);
 });
